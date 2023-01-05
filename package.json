@@ -14,6 +14,12 @@
   "publishConfig": {
     "access": "public"
   },
+  "keywords": [
+    "Sphinx",
+    "Intersphinx",
+    "Documentation",
+    "Python"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/curvenote/intersphinx.git"
