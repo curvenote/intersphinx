@@ -1,5 +1,11 @@
 # intersphinx
 
+## 0.0.8
+
+### Patch Changes
+
+- 65224cc: Update README and documentation
+
 ## 0.0.7
 
 ### Patch Changes

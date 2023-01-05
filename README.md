@@ -1,5 +1,9 @@
 # intersphinx
 
+[![intersphinx on npm](https://img.shields.io/npm/v/intersphinx.svg)](https://www.npmjs.com/package/intersphinx)
+[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/curvenote/intersphinx/blob/main/LICENSE)
+[![CI](https://github.com/curvenote/intersphinx/workflows/CI/badge.svg)](https://github.com/curvenote/intersphinx/actions)
+
 Read and write intersphinx `objects.inv` from node or the command line.
 
 To use from the command line, use the `-g` to create a global install.
