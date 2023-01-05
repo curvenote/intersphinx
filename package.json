@@ -31,7 +31,10 @@
     "declarations": "tsc --project ./tsconfig.json --declaration --emitDeclarationOnly --declarationMap --outDir dist/types",
     "prepublishOnly": "npm run build",
     "build:cli": "esbuild src/cli/index.ts --bundle --outfile=dist/intersphinx.js --platform=node",
-    "build": "npm-run-all -l clean copy:version -p build:cjs build:esm build:cli declarations"
+    "build": "npm-run-all -l clean copy:version -p build:cjs build:esm build:cli declarations",
+    "changeset": "changeset",
+    "version": "changeset version && npm install",
+    "publish": "npm run clean && npm run build -- --force && changeset publish && git push --follow-tags"
   },
   "bugs": {
     "url": "https://github.com/curvenote/intersphinx/issues"
@@ -44,6 +47,7 @@
     "node-fetch": "^2.6.7"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.26.0",
     "@types/jest": "^28.1.6",
     "@types/js-yaml": "^4.0.5",
     "@types/node-fetch": "^2.6.2",
