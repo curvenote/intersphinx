@@ -4,7 +4,7 @@ import { extname } from 'path';
 import yaml from 'js-yaml';
 import { clirun, getSession, tic } from 'myst-cli-utils';
 import type { ISession } from 'myst-cli-utils';
-import { Inventory } from '../intersphinx';
+import { Inventory } from '../intersphinx.js';
 
 export async function parseInvFile(session: ISession, path: string, output?: string) {
   const inv = new Inventory({ path });

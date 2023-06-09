@@ -1,10 +1,10 @@
 #!/usr/bin/env node
-import commander from 'commander';
-import version from '../version';
-import { addParseCLI } from './parse';
-import { addSearchCLI } from './list';
+import { Command } from 'commander';
+import version from '../version.js';
+import { addParseCLI } from './parse.js';
+import { addSearchCLI } from './list.js';
 
-const program = new commander.Command();
+const program = new Command();
 
 addParseCLI(program);
 addSearchCLI(program);

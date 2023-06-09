@@ -1,3 +1,4 @@
+import { describe, expect, test } from 'vitest';
 import { Inventory } from './intersphinx';
 
 describe('Test Inventory', () => {

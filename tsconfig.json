@@ -1,33 +1,29 @@
 {
   "compilerOptions": {
-    "target": "es6",
-    // module is overridden from the build:esm/build:cjs scripts
-    "module": "es2015",
-    "jsx": "react-jsx",
-    "lib": ["es2020"],
+    "composite": false,
+    "declaration": false,
+    "declarationMap": false,
+    "target": "ES2019",
     "esModuleInterop": true,
-    "noImplicitAny": true,
+    "forceConsistentCasingInFileNames": true,
+    "inlineSources": false,
+    "isolatedModules": true,
+    "module": "node16",
+    "moduleResolution": "node16",
+    "allowSyntheticDefaultImports": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "preserveWatchOutput": true,
+    "skipLibCheck": true,
     "strict": true,
-    "moduleResolution": "node",
-    "sourceMap": false,
-    // outDir is overridden from the build:esm/build:cjs scripts
-    "outDir": "dist/types",
-    "baseUrl": "src",
-    "paths": {
-      "*": ["node_modules/*"]
-    },
-    // Type roots allows it to be included in a workspace
+    "lib": ["es2021", "DOM"],
     "typeRoots": [
-      "./node_modules/@types",
       "./types",
+      "./node_modules/@types",
       "../../node_modules/@types",
       "../../../node_modules/@types"
-    ],
-    "resolveJsonModule": true,
-    // Ignore node_modules, etc.
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
+    ]
   },
-  "include": ["src/**/*.ts", "tests/**/*"],
-  "exclude": ["src/**/*.spec.ts"]
+  "include": ["."],
+  "exclude": ["dist", "build", "node_modules", "src/**/*.spec.ts", "tests"]
 }
