@@ -101,7 +101,8 @@ export class Inventory {
           `Error fetching intersphinx from "${url}": ${res.status} ${res.statusText}`,
         );
       }
-      buffer = await res.buffer();
+      const arrayBuffer = await res.arrayBuffer();
+      buffer = Buffer.from(arrayBuffer);
     } else {
       buffer = fs.readFileSync(this.path);
     }
