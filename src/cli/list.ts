@@ -2,7 +2,7 @@ import { Command } from 'commander';
 import chalk from 'chalk';
 import { clirun, getSession, tic } from 'myst-cli-utils';
 import type { ISession } from 'myst-cli-utils';
-import { Inventory } from '../intersphinx';
+import { Inventory } from '../intersphinx.js';
 
 export function summarizeInvFile(session: ISession, inv: Inventory) {
   Object.entries(inv.data).forEach(([domainName, domain]) => {

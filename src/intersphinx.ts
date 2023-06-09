@@ -2,7 +2,7 @@ import fs from 'fs';
 import zlib from 'zlib';
 import fetch from 'node-fetch';
 import { isUrl } from 'myst-cli-utils';
-import type { Domains } from './types';
+import type { Domains } from './types.js';
 
 type Entry = { type: string; location: string; display?: string };
 type InventoryItem = { location: string; display?: string };

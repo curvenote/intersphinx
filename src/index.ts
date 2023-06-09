@@ -1,2 +1,2 @@
-export { Inventory } from './intersphinx';
-export { Domains } from './types';
+export { Inventory } from './intersphinx.js';
+export { Domains } from './types.js';
